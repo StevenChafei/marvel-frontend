@@ -13,7 +13,7 @@ const Comics = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/comics?title=${searchComics}`
+          `https://site--marvel-backend--rpqmwt7bcj27.code.run/comics?title=${searchComics}`
         );
 
         // console.log(response.data);

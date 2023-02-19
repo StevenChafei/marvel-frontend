@@ -24,7 +24,7 @@ const CharacterCard = ({ character }) => {
           }
           alt={"Titre :" + character.name}
         />
-        {/* <div className="comic-description">{comic.description}</div> */}
+
         {character.description ? (
           <div className="character-description">{character.description}</div>
         ) : (

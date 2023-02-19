@@ -13,7 +13,7 @@ const Signup = ({ handleToken }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://lereacteur-vinted-api.herokuapp.com/user/signup",
+        "https://site--marvel-backend--67k4ycyfnl9b.code.run/user/signup",
         {
           username,
           email,
