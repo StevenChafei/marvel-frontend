@@ -1,38 +1,604 @@
-.App {
-  text-align: center;
+/* ---------------------  HEADER --------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+Header {
+  margin: 0 auto;
+  max-width: 1440px;
+  /* border: solid 5px green; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  background: rgb(4, 25, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 25, 32, 1) 0%,
+    rgba(5, 27, 34, 1) 22%,
+    rgba(27, 45, 56, 1) 50%,
+    rgba(143, 25, 57, 1) 75%,
+    rgba(230, 68, 68, 1) 100%
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-position {
+  /* border: solid 5px red; */
+}
+
+button {
+  border-radius: 5px;
+  /* border: none; */
+  padding: 10px;
+}
+
+.container {
+  /* max-width: 1440px; */
+}
+
+.all-button-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* border: solid 3px red; */
+  flex-direction: row;
+  border-bottom: 5px;
+}
+
+.logo-position {
+  /* border: solid 5px green; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.test {
+  /* border: solid 5px blue; */
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+}
+
+.test2 {
+  /* border: solid 5px white; */
+  display: flex;
+  width: 1440px;
+  margin-bottom: 50px;
+}
+
+.logo-content {
+  /* border: solid 3px red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1440px;
+}
+
+.logo-content img {
+  width: 350px;
+  /* border: solid 3px red; */
+  /* justify-content: center; */
+  display: flex;
+  margin-left: 600px;
+  margin-right: 200px;
+}
+
+/*  FORMULAIRE LOGIN AND SIGNUP */
+
+.acces {
+  display: flex;
+  /* border: red solid 3px; */
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signup-button {
+  margin-left: 20px;
+  border: red solid 3px;
+  font-family: "Bebas Neue";
+  border: none;
+  background-color: #aac0ce;
+  color: white;
+  font-size: 20px;
+  width: 110px;
+}
+
+.signup-button {
+  box-shadow: 11px 10px 29px 6px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 11px 10px 29px 6px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 11px 10px 29px 6px rgba(0, 0, 0, 0.42);
+}
+
+.formulaire {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+
+.formulaire {
+  background: rgb(0, 0, 0);
+  background: rgb(4, 25, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 25, 32, 1) 0%,
+    rgba(5, 27, 34, 1) 22%,
+    rgba(27, 45, 56, 1) 50%,
+    rgba(143, 25, 57, 1) 75%,
+    rgba(230, 68, 68, 1) 100%
+  );
+}
+
+.forms {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.submit {
+  font-family: "Bebas Neue";
+  background-color: #aac0ce;
+  border: 1px solid #aac0ce;
+  color: white;
+  width: 275px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forms input {
+  width: 275px;
+  border: none;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  color: rgb(184, 182, 182);
+  font-size: 16px;
+  /* border-bottom: solid 1px rgb(235, 168, 168); */
+}
+
+.try {
+  display: flex;
+  flex-direction: column;
+  /* border: red solid 1px; */
+  margin-top: 30px;
+  color: white;
+}
+
+/* ---------------------  HOME PAGE ---------------------  */
+
+.HomePage {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.home-pics {
+  display: flex;
+  justify-content: center;
+  /* align-content: flex-start; */
+  object-fit: cover;
+  height: 900px;
+}
+
+.home-hero-forme {
+  /* border: red solid 1px; */
+  display: flex;
+  align-items: flex-start;
+}
+
+.home-pics {
+  background: rgb(0, 0, 0);
+  background: rgb(4, 25, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 25, 32, 1) 0%,
+    rgba(5, 27, 34, 1) 22%,
+    rgba(27, 45, 56, 1) 50%,
+    rgba(143, 25, 57, 1) 75%,
+    rgba(230, 68, 68, 1) 100%
+  );
+}
+
+/* --------------------- CHARACTERS --------------------- */
+
+.character-button {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(252, 252, 252);
+  background-color: none;
+  font-family: "Bebas Neue";
+  background-color: Transparent;
+  box-shadow: 11px 10px 29px 6px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 11px 10px 29px 6px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 11px 10px 29px 6px rgba(0, 0, 0, 0.42);
+}
+
+.Characters {
+  margin: auto 0;
+  max-width: 1240px;
+}
+
+.personnages {
+  display: flex;
+}
+
+.characters-page {
+  background: rgb(0, 0, 0);
+  background: rgb(4, 25, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 25, 32, 1) 0%,
+    rgba(5, 27, 34, 1) 22%,
+    rgba(27, 45, 56, 1) 50%,
+    rgba(143, 25, 57, 1) 75%,
+    rgba(230, 68, 68, 1) 100%
+  );
+}
+
+.content-characters {
+  margin: 0 auto;
+  max-width: 1340px;
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.fav-relative-characters {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #aac0ce;
+  border: solid rgb(254, 254, 254) 8px;
+  width: 300px;
+}
+
+.character-cover img {
+  display: flex;
+  width: 216px;
+  height: 324px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.character-title {
+  font-family: "Bebas Neue";
+  display: flex;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.icons-name {
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+}
+
+.character-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-description {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  width: 250px;
+}
+
+.character-whithout-description {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  width: 250px;
+}
+
+.name-characters {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(211, 25, 25);
+  width: 250px;
+  text-align: center;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.name-characters img {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  padding-right: 10px;
+}
+
+/* --------------------- CHARACTERS - SEARCHBAR --------------------- */
+
+.content-search-bar {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.search-bar input {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 500px;
+  background-color: rgb(229, 229, 229);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  /* padding-left: 5px; */
+}
+
+/* --------------------- COMICS --------------------- */
+
+.comics-button {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(252, 252, 252);
+  background-color: none;
+  font-family: "Bebas Neue";
+  background-color: Transparent;
+}
+
+.Comics {
+  margin: auto 0;
+  max-width: 1240px;
+}
+
+.bouquins {
+  display: flex;
+}
+
+.comics-page {
+  background: rgb(0, 0, 0);
+  background: rgb(4, 25, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 25, 32, 1) 0%,
+    rgba(5, 27, 34, 1) 22%,
+    rgba(27, 45, 56, 1) 50%,
+    rgba(143, 25, 57, 1) 75%,
+    rgba(230, 68, 68, 1) 100%
+  );
+}
+
+.content-comics {
+  margin: 0 auto;
+  max-width: 1340px;
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+  /* border: solid red 5px; */
+}
+
+.fav-relative-comics {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #aac0ce;
+  border: solid rgb(254, 254, 254) 8px;
+  width: 300px;
+}
+
+.comic-cover img {
+  display: flex;
+  width: 216px;
+  height: 324px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.comic-title {
+  font-family: "Bebas Neue";
+  display: flex;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.icons-name {
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+}
+
+.comic-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.comic-description {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  width: 250px;
+}
+
+.comic-whithout-description {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  width: 250px;
+}
+
+.name-comics {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: rgb(211, 25, 25);
+  width: 250px;
+  text-align: center;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.name-comics img {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  padding-right: 10px;
+}
+
+/* --------------------- COMIC DETAIL --------------------- */
+
+.Comics {
+  margin: auto 0;
+  max-width: 1240px;
+}
+
+.single-comic-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 0;
+  padding-bottom: 50px;
+}
+
+.block-comic-infos {
+  /* border: red solid 5px; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 500px;
+}
+
+.single-comic-title {
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.single-comic-description,
+.single-comic-whithout-description {
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  width: 500px;
+  font-size: 30px;
+}
+
+.single-comic-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 50px;
+  border: solid rgb(254, 254, 254) 8px;
+}
+
+/* --------------------- CHARACTER DETAIL --------------------- */
+
+.Characters {
+  margin: auto 0;
+  max-width: 1240px;
+}
+
+.single-character-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 0;
+  padding-bottom: 50px;
+}
+
+.block-character-infos {
+  /* border: red solid 5px; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 500px;
+}
+
+.single-character-title {
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.single-character-description,
+.single-character-whithout-description {
+  color: white;
+  font-family: "Roboto";
+  font-size: 18px;
+  padding-top: 10px;
+  width: 500px;
+  font-size: 30px;
+}
+
+.single-character-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 50px;
+  border: solid rgb(254, 254, 254) 8px;
+}
+
+/* --------------------- COMICS - SEARCHBAR --------------------- */
+
+.content-search-bar {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  /* border: red solid 1px; */
+}
+
+.search-bar input {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 500px;
+  background-color: rgb(229, 229, 229);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  /* padding-left: 5px; */
 }

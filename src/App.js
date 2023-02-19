@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
+import Header from "./components/Header";
+import Home from "./pages/HomePage";
+import Characters from "./pages/Characters";
+import Character from "./pages/Character";
+import Comics from "./pages/Comics";
+import Comic from "./pages/Comic";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+// import CharacterId from "./pages/CharacterId";
+
+import "./App.css";
 
 function App() {
+  const [search, setSearch] = useState("");
+  const [searchComics, setSearchComics] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      {/* <Pagination /> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/characters"
+          element={<Characters search={(search, setSearch)} />}
+        />
+        <Route path="/character/:characterId" element={<Character />} />
+        <Route path="/comic/:id" element={<Comic />} />
+        <Route
+          path="/comics"
+          element={<Comics search={(searchComics, setSearchComics)} />}
+        />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
