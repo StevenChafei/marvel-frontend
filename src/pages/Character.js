@@ -11,7 +11,7 @@ const Character = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://site--marvel-backend--rpqmwt7bcj27.code.run//comics/${characterId}`
+          `https://site--marvel-backend--rpqmwt7bcj27.code.run/comics/${characterId}`
         );
         // console.log(response.data);
         setCharacter(response.data);

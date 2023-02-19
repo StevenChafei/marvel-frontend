@@ -11,7 +11,7 @@ const Comic = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://site--marvel-backend--rpqmwt7bcj27.code.run//comic/${id}`
+          `https://site--marvel-backend--rpqmwt7bcj27.code.run/comic/${id}`
         );
         setComic(response.data);
         setIsLoading(false);
